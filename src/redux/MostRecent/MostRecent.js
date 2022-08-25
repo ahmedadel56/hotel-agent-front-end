@@ -7,7 +7,7 @@ export const success = (mostRecent) => ({
 });
 
 export const fetchMostRecentHotels = () => async (dispatch) => {
-  fetch('http://localhost:3000/v1/most_recent')
+  fetch('https://infinite-falls-52470.herokuapp.com/v1/most_recent')
     .then((data) => data.json())
     .then((data) => {
       dispatch(success(data));

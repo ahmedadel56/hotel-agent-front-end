@@ -26,7 +26,7 @@ export const deleteHotelSucces = (hotel) => ({
 
 export const listHotel = () => async (dispatch) => {
   fetch(
-    `http://localhost:3000/v1/users/${localStorage.getItem('userId')}/hotels`,
+    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem('userId')}/hotels`,
     {
       method: 'GET',
       headers: {
@@ -47,7 +47,7 @@ export const listHotel = () => async (dispatch) => {
 
 export const addHotel = (data) => async (dispatch) => {
   fetch(
-    `http://127.0.0.1:3000/v1/users/${localStorage.getItem('userId')}/hotels`,
+    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem('userId')}/hotels`,
     {
       method: 'POST',
       headers: {
@@ -77,7 +77,7 @@ export const addHotel = (data) => async (dispatch) => {
     });
 };
 export const viewHotel = () => async (dispatch) => {
-  fetch('http://127.0.0.1:3000/v1/users/2/hotels/2', {
+  fetch('https://infinite-falls-52470.herokuapp.com/v1/users/2/hotels/2', {
     method: 'GET',
     headers: {
       Accept: 'application/json',
@@ -95,7 +95,7 @@ export const viewHotel = () => async (dispatch) => {
 };
 export const deleteHotel = (hotel) => async (dispatch) => {
   fetch(
-    `http://127.0.0.1:3000/v1/users/${localStorage.getItem(
+    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem(
       'userId',
     )}/hotels/${hotel}`,
     {
