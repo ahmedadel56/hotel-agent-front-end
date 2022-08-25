@@ -39,7 +39,7 @@ export const logout = () => async (dispatch) => {
 };
 
 export const createUser = (data) => async (dispatch) => {
-  fetch('https://infinite-falls-52470.herokuapp.com/v1/users', {
+  fetch('http://127.0.0.1:3000/v1/users', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -64,7 +64,7 @@ export const createUser = (data) => async (dispatch) => {
 };
 
 export const logInUser = (data) => async (dispatch) => {
-  fetch('https://infinite-falls-52470.herokuapp.com/v1/auth/login', {
+  fetch('http://127.0.0.1:3000/v1/auth/login', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
