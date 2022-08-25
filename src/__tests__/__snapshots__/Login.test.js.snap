@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if Login page renders correctly 1`] = `
+<div
+  className="reserve-container"
+  style={
+    Object {
+      "backgroundImage": "url(authentication.jpg)",
+    }
+  }
+>
+  <div
+    className="reserve-heading"
+  >
+    <h1>
+      WELCOME BACK!
+    </h1>
+    <hr />
+    <p>
+      Sign in to continue
+    </p>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="login-form"
+    >
+      <input
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="✉️  email"
+      />
+    </div>
+    <div
+      className="login-form"
+    >
+      <input
+        minLength={6}
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="🔒  password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="login-btn"
+    >
+      <input
+        type="submit"
+        value="SIGN IN"
+      />
+    </div>
+  </form>
+</div>
+`;

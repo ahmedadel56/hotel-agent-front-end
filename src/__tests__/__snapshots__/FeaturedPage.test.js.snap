@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if Featured page renders correctly 1`] = `
+<div
+  className="featured-container"
+>
+  <div
+    className="featured-heading"
+  >
+    <h1>
+      Featured Hotels
+    </h1>
+    <p>
+      Please select a Hotel
+    </p>
+  </div>
+  <div
+    className="react-multi-carousel-list carousel-container "
+    dir="ltr"
+  >
+    <ul
+      className="react-multi-carousel-track "
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "overflow": "unset",
+          "transform": "translate3d(0px,0,0)",
+          "transition": "none",
+        }
+      }
+    />
+  </div>
+</div>
+`;
