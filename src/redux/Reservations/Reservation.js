@@ -19,7 +19,7 @@ export const deleteReservation = (reservation) => ({
 
 export const listReservations = () => async (dispatch) => {
   fetch(
-    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem(
+    `http://127.0.0.1:3000/v1/users/${localStorage.getItem(
       'userId',
     )}/reservations`,
     {
@@ -42,7 +42,7 @@ export const listReservations = () => async (dispatch) => {
 
 export const addHotelReservation = (data) => async (dispatch) => {
   fetch(
-    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem(
+    `http://127.0.0.1:3000/v1/users/${localStorage.getItem(
       'userId',
     )}/reservations`,
     {
@@ -76,7 +76,7 @@ export const addHotelReservation = (data) => async (dispatch) => {
 
 export const deleteHotelReservation = (id) => async (dispatch) => {
   fetch(
-    `https://infinite-falls-52470.herokuapp.com/v1/users/${localStorage.getItem(
+    `http://127.0.0.1:3000/v1/users/${localStorage.getItem(
       'userId',
     )}/reservations/${id}`,
     {
